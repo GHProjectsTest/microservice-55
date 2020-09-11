@@ -81,9 +81,9 @@ public class MusicService extends RESTService {
 
   @Api
   @SwaggerDefinition(
-      info = @Info(title = "55", version = "$Metadata_Version$",
-          description = "$Metadata_Description$",
-          termsOfService = "$Metadata_Terms$",
+      info = @Info(title = "55", version = "",
+          description = "",
+          termsOfService = "",
           contact = @Contact(name = "", email = "CAEAddress@gmail.com") ,
           license = @License(name = "BSD",
               url = "https://github.com/GHProjectsTest/microservice-55/blob/master/LICENSE.txt") ) )
@@ -93,6 +93,50 @@ public class MusicService extends RESTService {
     private final MusicService service = (MusicService) Context.getCurrent().getService();
 
       /**
+   * 
+   * postSong
+   *
+   * 
+   * @param payload  a JSONObject
+   * 
+   * @return Response 
+   * 
+   */
+  @POST
+  @Path("/songs")
+  @Produces(MediaType.APPLICATION_JSON)
+  @Consumes(MediaType.TEXT_PLAIN)
+  @ApiResponses(value = {
+       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "resp")
+  })
+  @ApiOperation(value = "postSong", notes = " ")
+  public Response postSong(String payload) {
+    JSONObject payload_JSON = (JSONObject) JSONValue.parse(payload);
+
+
+
+
+     
+    // service method invocations
+
+     
+
+
+
+
+    // resp
+    boolean resp_condition = true;
+    if(resp_condition) {
+      JSONObject res = new JSONObject();
+
+      
+
+      return Response.status(HttpURLConnection.HTTP_OK).entity(res.toJSONString()).build();
+    }
+    return null;
+  }
+
+  /**
    * 
    * getSongs
    *
