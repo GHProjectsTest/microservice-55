@@ -172,7 +172,7 @@ public class MusicService extends RESTService {
     if(song_condition) {
       JSONObject songResult = new JSONObject();
 
-      System.out.println("TEST");
+      System.out.println("TEST2");
 
       return Response.status(HttpURLConnection.HTTP_OK).entity(songResult.toJSONString()).build();
     }
