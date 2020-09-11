@@ -81,7 +81,7 @@ public class MusicService extends RESTService {
 
   @Api
   @SwaggerDefinition(
-      info = @Info(title = "55", version = "",
+      info = @Info(title = "55", version = "0.0.0",
           description = "",
           termsOfService = "",
           contact = @Contact(name = "", email = "CAEAddress@gmail.com") ,
